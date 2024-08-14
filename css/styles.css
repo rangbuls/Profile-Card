@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../image/background.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+    background-size: cover; /* Agar gambar menutupi seluruh area */
+    background-position: center; /* Menempatkan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/*profile card*/
+.profile-card {
+    background: rgba(52, 73, 94, 0.7);
+    border-radius: 10px;
+    padding: 70px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 80px;
+}
+
+.profile-header {
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.connection, .title {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Save Contact Button */
+.save-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.save-contact .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Profile Links and Social Links */
+.profile-links,
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.link { 
+    background-color: rgba(52, 73, 94, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.link-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+/* Visi Container */
+.visi-container {
+    background-color: rgba(52, 73, 94, 0.5);
+    padding: 25px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.visi {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Misi Container */
+.misi-container {
+    background-color: rgba(52, 73, 94, 0.5);
+    display: flexbox;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 25px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.misi {
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 400px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+ol {
+    padding-left: 10px;
+    text-align: left;
+}
+
+ol li {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .save-contact {
+        margin-left: 0;
+        padding: 15px 20px;
+    }
+
+    .profile-links, 
+    .social-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .link {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .misi-container {
+        flex-direction: column; /* Stack misi vertically on smaller screens */
+    }
+
+    .misi {
+        max-width: 100%;
+        min-width: auto;
+    }
+}
